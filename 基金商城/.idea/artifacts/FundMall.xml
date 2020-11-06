@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="FundMall">
+    <output-path>$PROJECT_DIR$/out/artifacts/FundMall</output-path>
+    <root id="root" />
+  </artifact>
+</component>
