@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>INSPINIA | E-commerce</title>
+
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Toastr style -->
+    <link href="/static/css/plugins/toastr/toastr.min.css" rel="stylesheet">
+
+    <link href="/static/css/animate.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav metismenu" id="side-menu">
+                    <li class="nav-header">
+                        <div class="dropdown profile-element"> <span>
+                            
+                             </span>
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                                <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">阿米莉亚.</strong>
+                             </span>  </span>
+                            </a>
+                        </div>
+                        <div class="logo-element">
+                            IN+
+                        </div>
+                    </li>
+                    <li>
+                        <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">首页</span> <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="index.html">首页</a></li>
+                            <!--  -->
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">图表</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="graph_flot.html">基金数据表</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">邮件 </span><span class="label label-warning pull-right">1/3</span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="mailbox.html">收件箱</a></li>
+                            <li></li>
+
+                        </ul>
+                    </li>
+
+
+
+
+                    <li>
+                        <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">专家介绍</span>  <span class="pull-right label label-primary">SPECIAL</span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="contacts_2.html">专家介绍</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li>
+
+
+                    </li>
+                    <li>
+
+                        <ul class="nav nav-second-level collapse">
+
+                        </ul>
+                    </li>
+                    <li>
+
+                    </li>
+
+                    <li>
+
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table"></i> <span class="nav-label">基金数据表</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level collapse">
+                            <li><a href="table_basic.html">数据表</a></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="active">
+                        <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">基金采购</span><span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li class="active"><a href="ecommerce_products_grid.html">基金表单</a></li>
+                            <li><a href="ecommerce_product_list.html">基金清单</a></li>
+                            <li></li>
+                            <li><a href="ecommerce_product_detail.html">基金详情</a></li>
+                            <li><a href="ecommerce-cart.html">购物车</a></li>
+                            
+                            <li></li>
+                        </ul>
+                    </li>
+
+
+
+                    <li class="landing_link">
+
+                    </li>
+                    <li class="special_link">
+
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                        <form role="search" class="navbar-form-custom" action="search_results.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search">
+                            </div>
+                        </form>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <span class="m-r-sm text-muted welcome-message">欢迎阿米莉亚.</span>
+                        </li>
+                        
+                        
+
+
+                        <li>
+                            <a href="login.html">
+                                <i class="fa fa-sign-out"></i> 注销
+                            </a>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <h2>基金预览</h2>
+                    <ol class="breadcrumb">
+                        <li>
+                            <a href="index.html">首页</a>
+                        </li>
+                        <li>
+                            <a>基金购买</a>
+                        </li>
+                        <li class="active">
+                            <strong>基金预览</strong>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-lg-2">
+
+                </div>
+            </div>
+
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_7.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥13
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 嘉合货币B</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        理财选我就对了
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ¥29
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 国君资管君得诚混合基金</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        国君资管两大王牌联合打造
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box active">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_2.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥66
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 睿远成长价值混合基金</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        恢复申购定投：每日限额1000
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_3.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥77
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 鑫元货币A</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        投资于央票，短期融资券，协议存款等
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_4.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥15
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 余额理财</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        白天炒股 晚上理财
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_5.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥5
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 嘉合货币A</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        新手理财第一站
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_6.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                        ¥6
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> 兴全货币A</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        闲钱定时投 月光不用愁
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ￥10
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> Product</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        Many desktop publishing packages and web page editors now.
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ￥10
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> Product</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        Many desktop publishing packages and web page editors now.
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ￥10
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> Product</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        Many desktop publishing packages and web page editors now.
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ￥10
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> Product</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        Many desktop publishing packages and web page editors now.
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="ibox">
+                            <div class="ibox-content product-box">
+
+                                <div class="product-imitation">
+                                    <img src="/static/img/grid_1.png" style="width:240px;height: auto;">
+                                </div>
+                                <div class="product-desc">
+                                    <span class="product-price">
+                                    ￥10
+                                </span>
+                                    <small class="text-muted">基金</small>
+                                    <a href="#" class="product-name"> Product</a>
+
+
+
+                                    <div class="small m-t-xs">
+                                        Many desktop publishing packages and web page editors now.
+                                    </div>
+                                    <div class="m-t text-righ">
+
+                                        <a href="#" class="btn btn-xs btn-outline btn-primary">Info <i class="fa fa-long-arrow-right"></i> </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+            </div>
+            <div class="footer">
+                <div class="pull-right">
+                    10GB of <strong>250GB</strong> Free.
+                </div>
+                <div>
+                    <strong>FundMall</strong> Example Company &copy; 2020-2021
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- Mainly scripts -->
+    <script src="/static/js/jquery-3.1.1.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="/static/js/inspinia.js"></script>
+    <script src="/static/js/plugins/pace/pace.min.js"></script>
+
+</body>
+
+</html>
